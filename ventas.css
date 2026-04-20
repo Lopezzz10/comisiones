@@ -237,6 +237,16 @@ h2::after {
     font-size: clamp(0.95rem, 3.2vw, 1.05rem);
 }
 
+/* ===== MENSAJES DE ERROR ===== */
+.error-msg {
+    display: block;
+    color: red;
+    font-style: italic;
+    font-size: 0.78rem;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
 /* ===== RESPONSIVE — pantallas muy pequeñas (<360px) ===== */
 @media (max-width: 360px) {
     body {

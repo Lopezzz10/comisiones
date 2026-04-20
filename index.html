@@ -14,13 +14,16 @@
         <h1>Calculadora de Comisiones</h1>
 
         <label for="txtSueldoBase">Salario Base</label>
-        <input type="number" id="txtSueldoBase" placeholder="0.00" min="0">
+        <input type="number" id="txtSueldoBase" onblur="validarCampo('txtSueldoBase', 'errSueldoBase')" placeholder="0.00" min="0">
+        <span id="errSueldoBase"></span>
 
         <label for="txtVentas">Número de ventas</label>
-        <input type="number" id="txtVentas" placeholder="0" min="0">
+        <input type="number" id="txtVentas" onblur="validarVentas()" placeholder="0" min="0">
+        <span id="errVentas"></span>
 
         <label for="txtPrecio">Precio del producto</label>
-        <input type="number" id="txtPrecio" placeholder="0.00" min="0">
+        <input type="number" id="txtPrecio" onblur="validarCampo('txtPrecio', 'errPrecio')" placeholder="0.00" min="0">
+        <span id="errPrecio"></span>
 
         <button onclick="calcular()">Calcular Comisión</button>
 
